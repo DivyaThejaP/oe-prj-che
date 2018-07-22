@@ -1,0 +1,2 @@
+<?xml version="1.0" ?>
+<testsuites errors="0" failures="0" name="ABLUnit" tests="4"><testsuite name="C:/Theja/117Testing/27Mar/WRK1u/Operations/tests/BasicOp.cls" tests="4" time=".005"><testcase name="testAdditionValid" status="Success" time=".001"/><testcase name="testSubstraction" status="Success" time=".001"/><testcase name="testMultiplication" status="Success" time="0"/><testcase name="testDivision" status="Success" time=".001"/></testsuite></testsuites>

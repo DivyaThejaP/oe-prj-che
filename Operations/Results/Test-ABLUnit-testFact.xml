@@ -1,0 +1,2 @@
+<?xml version="1.0" ?>
+<testsuites errors="0" failures="0" name="ABLUnit" tests="3"><testsuite name="C:/Theja/117Testing/27Mar/WRK1u/Operations/tests/testFact.p" tests="3" time=".004"><testcase name="test1" status="Success" time=".002"/><testcase name="test2" status="Success" time=".001"/><testcase name="testErr" status="Success" time=".001"/></testsuite></testsuites>

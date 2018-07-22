@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="CI_OE" default="sonar" basedir="..">
+
+<property environment="env" />
+	<property file="ant/build.properties"/>  
+	 <taskdef resource="PCT.properties"/>
+	<typedef resource="types.properties"/>	
+<property name="PROJECTHOME" value="C:/Progress/OpenEdge117/oeide/eclipse/plugins/com.progress.openedge.pdt.abldoc.core_${version}"/>	
+	
+	<!--Sonar -->
+	<!-- Define the SonarQube global properties (the most usual way is to pass these properties via the command line) -->
+	<!--<property name="sonar.host.url" value="http://172.21.32.73:9000" />-->
+	<property name="sonar.host.url" value="http://localhost:9000" />
+
+	 
+	<!-- Define the SonarQube project properties -->
+	<property name="sonar.projectKey" value="OEPrj" />
+	<property name="sonar.projectName" value="OEPrj" />
+	<property name="sonar.projectVersion" value="1.0" />
+	<property name="sonar.sources" value="src" />
+	<property name="sonar.java.binaries" value="build" />
+	<property name="sonar.java.libraries" value="lib/*.jar" />
+	<property name="sonar.language" value="java" />
+<!-- Target for defining 'taskdef' -->
+<target name="taskdef">		
+	  <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+	            <!-- Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder 
+	            <classpath path="C:/Theja/Work/OpenEdge/11.4/sonarqube-ant-task-2.5.jar" />-->
+	        </taskdef>
+	<typedef resource="types.properties" />
+</target>
+
+	
+	
+<!-- Target for defining 'build' -->
+<target name="build" description="Builds source files">
+   
+  <mkdir dir="build"/>
+    <PCTCompile destDir="build" dlcHome="${DLC_HOME}" debugListing="true" listing="true" keepXref="true" xmlXref="true" relativePaths="false" forceCompile="true">
+  <!-- <PCTCompile destdir="build" listing="true" xmlXref="true" keepXref="true" debugListing="true" relativePaths="true">-->
+  	<propath>
+  	    <pathelement path="src"/>
+  	  </propath>
+    <fileset dir="src">
+      <include name="**/*.cls" />
+      <include name="*.p" />
+    </fileset>
+  </PCTCompile>
+  <mkdir dir="srcDbg" />
+<copy toDir="srcDbg">
+  <fileset dir="build/.dbg" />
+  <filterchain>
+    <filterreader classname="com.phenix.pct.DebugListingFilterReader" />
+  </filterchain>
+</copy>
+
+	<!--<PCTRun procedure="custom.p">
+		<propath location="src" />
+	  <Profiler enabled="true" outputDir="profiler" coverage="true" />
+	</PCTRun>-->
+
+
+</target>
+
+
+	<!-- Define SonarQube Scanner for Ant Target -->
+	<target name="sonar1">
+	    <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+	        <!-- Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder 
+	        <classpath path="C:\Theja\Work\OpenEdge\11.4\sonarqube-ant-task-2.5.jar" /> -->
+	    </taskdef>
+	 
+	    <!-- Execute SonarQube Scanner for Ant Analysis -->
+<!--      <sonar:sonar /> -->
+<sonar:sonar xmlns:sonar="antlib:org.sonar.ant">
+
+</sonar:sonar>
+	</target>
+	
+	<target name="sonar" >
+	            <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+	                <!-- Update the following line, or put the "sonar-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
+	                <!--<classpath path="path/to/sonar/ant/task/lib/sonarqube-ant-task-*.jar" />-->
+	            	<classpath path="C:\Theja\Work\OpenEdge\11.4\sonarqube-ant-task-2.5.jar" />
+	            </taskdef>
+	            
+	            <!-- Execute SonarQube Scanner for Ant Analysis -->
+		<sonar:sonar xmlns:sonar="antlib:org.sonar.ant">
+	            </sonar:sonar>
+	        </target>
+	<!-- Target for defining 'ablunit' -->
+	<target name="ablunit" depends="build" description="runs unit tests">
+		
+	<ABLUnit dlcHome="C:/Progress/OpenEdge117">
+		
+	  <fileset dir="src" includes="**/*.p" />
+	  <fileset dir="src" includes="**/*.cls" />
+	  <propath>
+	    <pathelement path="src" />	    
+	  	 <pathelement location="C:/Progress/OpenEdge\gui\ablunit.pl" />
+	  	  <pathelement location="C:/Progress/OpenEdge\gui\OpenEdge.Core.pl" /> 
+	  </propath>
+		 <Profiler enabled="true" outputDir="profiler" coverage="true" />
+	</ABLUnit>
+		
+
+	</target>
+	<target name="coverage" depends="ablunit">
+		 <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+		            <!-- Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
+		            <classpath path="C:\Theja\Work\OpenEdge\11.4\sonarqube-ant-task-2.5.jar" />
+		        </taskdef>
+		<GenericCoverage destFile="profiler/profiler.xml">
+		          <fileset dir="profiler" includes="*.out" />
+		          <propath location="srcDbg" />
+		        </GenericCoverage>
+	</target>
+	
+	
+	
+</project>
+

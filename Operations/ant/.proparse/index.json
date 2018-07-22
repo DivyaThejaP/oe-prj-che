@@ -1,0 +1,6 @@
+var data= { "files": [
+{ "file": "src/BasicOperations.cls.json" }
+,{ "file": "src/Factorial.p.json" }
+,{ "file": "src/Operations.cls.json" }
+,{ "file": "src/custom.p.json" }
+]}
