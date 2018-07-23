@@ -1,4 +1,4 @@
-...rc\Operations.cls                  07/09/2018 16:19:11   PROGRESS(R) Page 1   
+...rc\Operations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 1   
 
 {} Line Blk
 -- ---- ---
@@ -53,7 +53,7 @@
      33                             NO-UNDO.
      34         DEFINE         VARIABLE i1          AS INTEGER                  
      34                             NO-UNDO.
-...rc\Operations.cls                  07/09/2018 16:19:11   PROGRESS(R) Page 2   
+...rc\Operations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 2   
 
 {} Line Blk
 -- ---- ---
@@ -108,7 +108,7 @@
      75         /*--------------------------------------------------------------
      75     ----------------
      76          Purpose:
-...rc\Operations.cls                  07/09/2018 16:19:11   PROGRESS(R) Page 3   
+...rc\Operations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 3   
 
 {} Line Blk
 -- ---- ---
@@ -163,7 +163,7 @@
     110     ize):BeginInit().
     111             CAST(THIS-OBJECT:Int2, System.ComponentModel.ISupportInitial
     111     ize):BeginInit().
-...rc\Operations.cls                  07/09/2018 16:19:11   PROGRESS(R) Page 4   
+...rc\Operations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 4   
 
 {} Line Blk
 -- ---- ---
@@ -218,7 +218,7 @@
     150             /*  */
     151             /* Result */
     152             /*  */
-...rc\Operations.cls                  07/09/2018 16:19:11   PROGRESS(R) Page 5   
+...rc\Operations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 5   
 
 {} Line Blk
 -- ---- ---
@@ -273,7 +273,7 @@
     193             THIS-OBJECT:Multiply:Click:Subscribe(THIS-OBJECT:Multiply_Cl
     193     ick).
     194             /*  */
-...rc\Operations.cls                  07/09/2018 16:19:11   PROGRESS(R) Page 6   
+...rc\Operations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 6   
 
 {} Line Blk
 -- ---- ---
@@ -328,7 +328,7 @@
     236             THIS-OBJECT:Text = "Operations".
     237             THIS-OBJECT:Load:Subscribe(THIS-OBJECT:Operations_Load).
     238             CAST(THIS-OBJECT:Int1, System.ComponentModel.ISupportInitial
-...rc\Operations.cls                  07/09/2018 16:19:11   PROGRESS(R) Page 7   
+...rc\Operations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 7   
 
 {} Line Blk
 -- ---- ---
@@ -357,7 +357,7 @@
     255             i1 = Int1:Value.
     256             i2 = Int2:Value.    
     257             res:Value = testOp:Multiplication(i1,i2).
-    258     
+    258             
     259         END METHOD.
     260     
     261         /*--------------------------------------------------------------
@@ -383,7 +383,7 @@
     276         @VisualDesigner.
     277         METHOD PRIVATE VOID Result_Click( INPUT sender AS System.Object,
     277      INPUT e AS System.EventArgs ):
-...rc\Operations.cls                  07/09/2018 16:19:11   PROGRESS(R) Page 8   
+...rc\Operations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 8   
 
 {} Line Blk
 -- ---- ---
@@ -438,7 +438,7 @@
     317     
     318         /*--------------------------------------------------------------
     318     ----------------
-...rc\Operations.cls                  07/09/2018 16:19:11   PROGRESS(R) Page 9   
+...rc\Operations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 9   
 
 {} Line Blk
 -- ---- ---
@@ -487,7 +487,7 @@
     353         END DESTRUCTOR.
     354     
     354     END CLASS.
-...rc\Operations.cls                  07/09/2018 16:19:11   PROGRESS(R) Page 10  
+...rc\Operations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 10  
 
      File Name       Line Blk. Type   Tran            Blk. Label            
 -------------------- ---- ----------- ---- --------------------------------

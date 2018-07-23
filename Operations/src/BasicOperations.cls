@@ -16,7 +16,7 @@ BLOCK-LEVEL ON ERROR UNDO, THROW.
 CLASS BasicOperations:
         
     DEFINE VARIABLE res AS INTEGER NO-UNDO.
-    
+    DEFINE VARIABLE res1 AS INTEGER NO-UNDO.
     /*------------------------------------------------------------------------------
      Purpose: add two integer numbers
      Notes:

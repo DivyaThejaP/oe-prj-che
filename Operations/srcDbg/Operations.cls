@@ -255,7 +255,7 @@ CLASS Operations INHERITS Form:
         i1 = Int1:Value.
         i2 = Int2:Value.    
         res:Value = testOp:Multiplication(i1,i2).
-
+        
     END METHOD.
 
     /*------------------------------------------------------------------------------

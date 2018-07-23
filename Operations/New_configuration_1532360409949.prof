@@ -1,0 +1,26 @@
+2 07/23/2018 "" 21:10:10 "dpachipu"
+.
+1 "C:\Users\dpachipu\git\oe-prj-che\Operations\tests\custom.p" "" 21036
+.
+0 0 1 1
+.
+0 0 1 0.000000 0.037071
+1 0 1 0.000060 0.037071
+1 31 1 0.000109 0.000109
+1 32 1 0.036902 0.036902
+.
+.
+.
+1 10090 1 "DISPLAY       " 
+1 34 1 "EFMX" 
+1 37 1 "ECONST" 
+1 10157 1 "EASY ASSIGN STMT " 
+.
+1  1.0  1.0  0.0  1.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  496.0  144.0  408.0   83.0 
+.
+0 7 0 0 
+1  1  
+.
+0 0 "-pf C:\Progress\OpenEdge117\startup.pf,-cpinternal ISO8859-1,-cpstream ISO8859-1,-cpcoll Basic,-cpcase Basic,-d mdy,-numsep 44,-numdec 46,(end .pf),-s 200,-mmax 65534,-T C:/OpenEdge/WRK117,-debugalert,-rereadnolock,-inp 16000,-tok 4000,-nosplash,-p C:\Progress\OpenEdge117\oeide\eclipse\plugins\com.openedge.pdt.debug.core_11.7.4.00\abl\_debuglauncher.p,-profile C:\Theja\1174Testing\28Jun\WRK_Sonar\.metadata\.plugins\com.openedge.pdt.project\temp.dir\profiler_config_2080864477203126327.txt" 
+.
+.

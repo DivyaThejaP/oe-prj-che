@@ -3,4 +3,4 @@ eclipse.preferences.version=1
 extraProperties=sonar.sources\=src\r\nsonar.oe.propath\=src\r\nsonar.oe.dlc\=c\:\\Progress\\OpenEdge117\r\nsonar.projectKey\=test\r\nsonar.oe.binaries\=build\r\nsonar.oe.coverage.profiler.dir\=target/profiler\r\nsonar.or.propath.dlc\=true\r\nsonar.oe.proparse.debug\=false\r\nsonar.oe.skipProparse\=false
 moduleKey=OePrj
 projectKey=OePrj
-serverId=localhost
+serverId=172.21.32.73

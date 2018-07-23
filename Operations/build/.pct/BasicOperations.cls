@@ -1,4 +1,4 @@
-...sicOperations.cls                  07/09/2018 16:19:10   PROGRESS(R) Page 1   
+...sicOperations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 1   
 
 {} Line Blk
 -- ---- ---
@@ -53,7 +53,7 @@
      40     ----------------
      41           Purpose: Multiply two integer numbers
      42           Notes:
-...sicOperations.cls                  07/09/2018 16:19:10   PROGRESS(R) Page 2   
+...sicOperations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 2   
 
 {} Line Blk
 -- ---- ---
@@ -81,7 +81,7 @@
      59     
      60     END CLASS.
      61     
-...sicOperations.cls                  07/09/2018 16:19:10   PROGRESS(R) Page 3   
+...sicOperations.cls                  07/23/2018 20:54:09   PROGRESS(R) Page 3   
 
      File Name       Line Blk. Type   Tran            Blk. Label            
 -------------------- ---- ----------- ---- --------------------------------

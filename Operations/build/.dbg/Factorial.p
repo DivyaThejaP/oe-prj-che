@@ -8,8 +8,8 @@
         8      Created     : Fri Apr 04 11:14:14 IST 2014
         9      Notes       : 
        10    ----------------------------------------------------------------------*/
-       11   
-       12    
+       11    
+       12     
        13   /* ***************************  Definitions  ************************** */
        14   DEFINE INPUT-OUTPUT PARAMETER nfact AS INTEGER NO-UNDO. 
        15   DEFINE VARIABLE ix  AS INTEGER                NO-UNDO.

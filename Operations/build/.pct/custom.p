@@ -1,4 +1,4 @@
-...ions\src\custom.p                  07/09/2018 16:19:11   PROGRESS(R) Page 1   
+...ions\src\custom.p                  07/23/2018 20:54:09   PROGRESS(R) Page 1   
 
 {} Line Blk
 -- ---- ---
@@ -47,7 +47,7 @@
      37         MESSAGE "Test2". /* RETURN statement makes this MESSAGE unreacha
      37     ble */
      37     END PROCEDURE.
-...ions\src\custom.p                  07/09/2018 16:19:11   PROGRESS(R) Page 2   
+...ions\src\custom.p                  07/23/2018 20:54:09   PROGRESS(R) Page 2   
 
      File Name       Line Blk. Type   Tran            Blk. Label            
 -------------------- ---- ----------- ---- --------------------------------

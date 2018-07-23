@@ -1,4 +1,4 @@
-...s\src\Factorial.p                  07/09/2018 16:19:10   PROGRESS(R) Page 1   
+...s\src\Factorial.p                  07/23/2018 20:54:09   PROGRESS(R) Page 1   
 
 {} Line Blk
 -- ---- ---
@@ -14,8 +14,8 @@
       9        Notes       : 
      10      -------------------------------------------------------------------
      10     ---*/
-     11     
-     12      
+     11      
+     12       
      13     /* ***************************  Definitions  ***********************
      13     *** */
      14     DEFINE INPUT-OUTPUT PARAMETER nfact AS INTEGER NO-UNDO. 
@@ -53,13 +53,13 @@
      42     ASSIGN 
      43         nfact = nfact * ix.  
      44         
-...s\src\Factorial.p                  07/09/2018 16:19:10   PROGRESS(R) Page 2   
+...s\src\Factorial.p                  07/23/2018 20:54:09   PROGRESS(R) Page 2   
 
 {} Line Blk
 -- ---- ---
      45     RETURN.
      45             
-...s\src\Factorial.p                  07/09/2018 16:19:10   PROGRESS(R) Page 3   
+...s\src\Factorial.p                  07/23/2018 20:54:09   PROGRESS(R) Page 3   
 
      File Name       Line Blk. Type   Tran            Blk. Label            
 -------------------- ---- ----------- ---- --------------------------------

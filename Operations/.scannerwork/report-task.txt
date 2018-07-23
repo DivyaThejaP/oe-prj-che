@@ -1,0 +1,5 @@
+projectKey=OEPrj1
+serverUrl=http://nbhyddpachipu10:9000
+dashboardUrl=http://nbhyddpachipu10:9000/dashboard/index/OEPrj1
+ceTaskId=AWTGCB9JML3BbF5masm-
+ceTaskUrl=http://nbhyddpachipu10:9000/api/ce/task?id=AWTGCB9JML3BbF5masm-
