@@ -1,6 +1,23 @@
 var data= { "files": [
-{ "file": "src/BasicOperations.cls.json" }
+{ "file": "_srcDbg/BasicOperations.cls.json" }
+,{ "file": "_srcDbg/Factorial.p.json" }
+,{ "file": "_srcDbg/Factorial2.p.json" }
+,{ "file": "_srcDbg/Operations.cls.json" }
+,{ "file": "_srcDbg/custom.p.json" }
+,{ "file": "_srcDbg/custom2.p.json" }
+,{ "file": "custom.p.json" }
+,{ "file": "custom2.p.json" }
+,{ "file": "ddd.cls.json" }
+,{ "file": "src/BasicOperations.cls.json" }
 ,{ "file": "src/Factorial.p.json" }
 ,{ "file": "src/Operations.cls.json" }
 ,{ "file": "src/custom.p.json" }
+,{ "file": "srcDbg/BasicOperations.cls.json" }
+,{ "file": "srcDbg/Factorial.p.json" }
+,{ "file": "srcDbg/Operations.cls.json" }
+,{ "file": "srcDbg/custom.p.json" }
+,{ "file": "tests/BasicOp.cls.json" }
+,{ "file": "tests/TestSuiteClass.cls.json" }
+,{ "file": "tests/custom.p.json" }
+,{ "file": "tests/testFact.p.json" }
 ]}

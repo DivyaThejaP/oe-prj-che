@@ -1,6 +1,0 @@
-projectKey=OePrj
-serverUrl=http://172.21.32.73:9000
-serverVersion=6.7.4.38452
-dashboardUrl=http://172.21.32.73:9000/dashboard/index/OePrj
-ceTaskId=AWTITOdXtu3mUBv9b-Sj
-ceTaskUrl=http://172.21.32.73:9000/api/ce/task?id=AWTITOdXtu3mUBv9b-Sj
